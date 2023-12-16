@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+:root {
+  --primaryColor: #9400ff;
+  --redus: 3px;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--primaryColor);
+}
+main {
+  width: 90%;
+  max-width: 400px;
+  height: 200px;
+  background-color: white;
+  border-radius: var(--redus);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.show {
+  height: 480px;
+}
+input {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid var(--primaryColor);
+  border-radius: var(--redus);
+}
+button {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: var(--primaryColor);
+  border-radius: var(--redus);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.qrBox {
+  text-align: center;
+  padding: 10px;
+  border-radius: var(--redus);
+  border: 2px solid var(--primaryColor);
+}
